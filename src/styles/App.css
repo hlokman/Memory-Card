@@ -1,0 +1,43 @@
+body {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+#root {
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #1a2836;
+
+  color: white;
+}
+
+.score {
+  margin-top: -5px;
+  margin-bottom: -15px;
+  font-weight: 600;
+}
+.bestScore {
+  font-weight: 600;
+}
+
+i {
+  padding: 10px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+main {
+  padding: 30px;
+  background-color: #1a2836;
+}
