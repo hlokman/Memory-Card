@@ -6,6 +6,7 @@ import { Card } from "./Card";
 let arrayCheck = []; //"under the hood": no need to display this logic on screen
 
 function App() {
+  // let arrayCheck = []; if we define the arrayCheck here, the variable is destroyed (like all local variables not controlled b React)
   const [score, setScore] = useState(0);
   const [bestScore, setBestScore] = useState(0);
   const [animals, setAnimals] = useState([
@@ -104,6 +105,8 @@ function App() {
     if (score >= bestScore) {
       setBestScore(bestScore + 1);
     }
+
+    console.log(array);
   }
 
   const handleClick = (e) => {
